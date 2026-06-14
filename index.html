@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exoplanet Observatory Dashboard</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+<style>
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #0b1220, #05070f);
+    color: #e6f1ff;
+    font-family: Arial;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.panel {
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.1);
+}
+
+input {
+    padding: 10px;
+    background: #111827;
+    color: white;
+    border: 1px solid #334155;
+    width: 100%;
+}
+
+canvas {
+    background: #0b1220;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>🪐 EXOPLANET OBSERVATORY DASHBOARD</header>
+
+<div class="container">
+
+<div class="panel">
+    <input type="file" id="fileInput" accept=".csv,.txt,.dmag">
+</div>
+
+<div class="panel">
+    <canvas id="chart"></canvas>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
